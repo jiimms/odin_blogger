@@ -188,8 +188,9 @@ html{
 		-webkit-box-shadow:none;
 		-o-box-shadow:none;
 		box-shadow:none;
-		background:none}h1{
-		-moz-border-radius-topleft:6px;
+		background:none}
+		h1{
+		/*-moz-border-radius-topleft:6px;
 		-webkit-border-top-left-radius:6px;
 		-o-border-top-left-radius:6px;
 		-ms-border-top-left-radius:6px;
@@ -200,7 +201,7 @@ html{
 		-o-border-top-right-radius:6px;
 		-ms-border-top-right-radius:6px;
 		-khtml-border-top-right-radius:6px;
-		border-top-right-radius:6px;
+		border-top-right-radius:6px;*/
 		background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #42678d), color-stop(100%, #223447));
 		background-image:-moz-linear-gradient(#42678d,#223447);
 		background-image:linear-gradient(#42678d,#223447);
@@ -208,7 +209,7 @@ html{
 		-webkit-box-shadow:rgba(255, 255, 255, 0.15) 0 1px inset, white 0 1px;
 		-o-box-shadow:rgba(255, 255, 255, 0.15) 0 1px inset, white 0 1px;
 		box-shadow:rgba(255, 255, 255, 0.15) 0 1px inset, white 0 1px;
-		margin:-20px -20px 15px;
+		margin:-40px -20px 20px;
 		padding:20px;
 		padding-right:180px;
 		line-height:1em;
@@ -462,3 +463,15 @@ div.field_with_errors label{
 	font-weight:bold}
 div.field_with_errors input{
 	border: 3px solid red}
+
+.show_body{
+	font-size: 1.3em;
+	color: #5a5a5a;
+	line-height: 1.3em;
+}
+.wrapper{
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: justify;
+
+	}

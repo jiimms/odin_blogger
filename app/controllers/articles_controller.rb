@@ -38,7 +38,11 @@ end
 
 def destroy
 	@article = Article.find(params[:id])
-	@article.delete
+	@article.destroy 
+	# if i use delete iso destroy, dependents dont get deleted
+	# delete will skip all ActiveRecord-related 
+	# callbacks (which includes the dependency management), 
+	# whereas destroy will not. 
 	redirect_to articles_path
 end
 

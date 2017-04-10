@@ -1,0 +1,11 @@
+<h3>edit a Comment</h3>
+<%= form_for([@article, @comment]) do |f|%>
+
+<%= f.label :body, "Your Comments"%>
+<%= f.text_area :body%>
+
+<%= f.label :author_name, "Your Name"%>
+<%= f.text_field :author_name%>
+
+<%= f.submit "Post"%>
+<%end%>
