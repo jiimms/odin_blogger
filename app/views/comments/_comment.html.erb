@@ -1,8 +1,8 @@
-<div>
+<div class= "comment_div">
   <h6><%= comment.author_name %>: </h6>
   <p class="comment"><%= comment.body %></p>
-  <%= comment.article.id%>
-  <%= comment.id%>
   <%= link_to "Edit", edit_article_comment_path(comment.article, comment)%>
+  <%= link_to "Delete", edit_article_comment_path(comment.article, comment)%>
+
 </div>
 

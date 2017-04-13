@@ -11,7 +11,6 @@ class CommentsController < ApplicationController
 	end
 
 	def edit
-		byebug
 		@article=Article.find(params[:article_id])
 		@comment=@article.comments.find(params[:id])
 	end

@@ -1,18 +1,23 @@
 flash.notice = "Article Updated!"
 
 <h1><%= @article.title %></h1>
-<p class = "show_body"><%= @article.body %></p>
+<div class = "show_article">
+  <p class =  "article_content"><%= @article.body %></p>
 
-<p><%= link_to "edit", edit_article_path(@article) %>
-<%= link_to "delete", article_path(@article), method: :delete , data: {confirm: "sure?"}%>
-</p>
+  <p><%= link_to "edit", edit_article_path(@article) %>
+    <%= link_to "delete", article_path(@article), method: :delete , data: {confirm: "The article and all its comments will be forever destroyed. Nothing will ever make them come back to life. Are you sure you want to go ahead with this action? Think about it some more, there is no rush!! alright if you insist! lets go ahead and get rid of this article!!"}%>
+  </p>
+</div>
 
-<%= render 'comments/form' %>
+
 
 
 <h4><%= @article.comments.count%> Comments</h4> 
 
 <%= render @article.comments %>
+
+<%= render 'comments/form' %>
+<!-- comments form is to be written after @article.comments. comments/for will buid @article.comment and it will show in collection if form is written before collection -->
 
 
 <%= link_to "<< Back to Articles List", articles_path %>
